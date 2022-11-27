@@ -2,6 +2,7 @@ const dataUser = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const saltRounds = 10;
+require('dotenv').config();
 
 module.exports = {
 	getAllUser: async (req, res) => {
@@ -82,14 +83,17 @@ module.exports = {
 					message: 'Email not found',
 				});
 
-			const user = await User.findOne({ email: data.email });
+			const user = await dataUser.findOne({ email: data.email });
 			const checkPwd = await bcrypt.compareSync(data.password, user.password);
 			if (!checkPwd)
 				return res.status(400).json({
 					message: 'incorrect password',
 				});
 
-			const token = await jwt.sign({ email: data.email }, process.env.KEY);
+			const token = await jwt.sign(
+				{ email: data.email },
+				process.env.SECRET_KEY
+			);
 			res.header('auth-token', token).json({
 				message: 'success login',
 				token,

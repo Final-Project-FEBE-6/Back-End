@@ -10,10 +10,13 @@ const {
 	register,
 } = require('../controller/user.controller');
 
-router.get('/', getAllUser);
-router.get('/:id/', getUserById);
+const { auth, adminAuth } = require('../middleware/auth');
+const middleware = [auth, adminAuth];
+
+router.get('/', middleware, getAllUser);
+router.get('/:id/', middleware, getUserById);
 router.delete('/:id/', deleteUserById);
-router.put('/:id/', updateUserById);
+router.put('/:id/', auth, updateUserById);
 router.post('/login', login);
 router.post('/register', register);
 
