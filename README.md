@@ -7,7 +7,7 @@
 
 Request
 
-```http
+```
 GET: http://localhost:3000/user
 ```
 
@@ -47,7 +47,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/user/63831e9388852b9feb47022c
 ```
 
@@ -77,7 +77,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/user/63831e9388852b9feb47022c
 ```
 
@@ -99,7 +99,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://localhost:3000/user/63845c2e4ccf12e1727dda9f
 ```
 
@@ -139,7 +139,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/user/register
 ```
 
@@ -166,7 +166,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/user/login
 ```
 
@@ -193,7 +193,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/artikel
 ```
 
@@ -227,7 +227,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/artikel
 ```
 
@@ -269,7 +269,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/artikel/6385169a5fd36783cb94bd87
 ```
 
@@ -300,7 +300,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://localhost:3000/artikel/6385169a5fd36783cb94bd87
 ```
 
@@ -343,7 +343,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/artikel/6385169a5fd36783cb94bd87
 ```
 
@@ -367,7 +367,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/teskesepian
 ```
 
@@ -397,7 +397,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/teskesepian
 ```
 
@@ -441,7 +441,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/teskesepian/6385218f5fd36783cb94bda1
 ```
 
@@ -468,7 +468,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://localhost:3000/teskesepian/6385218f5fd36783cb94bda1
 ```
 
@@ -503,7 +503,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/teskesepian/6385218f5fd36783cb94bda1
 ```
 
@@ -527,7 +527,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/tesstress
 ```
 
@@ -557,7 +557,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesstress
 ```
 
@@ -601,7 +601,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesstress/638525d95fd36783cb94bdbc
 ```
 
@@ -628,7 +628,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://localhost:3000/tesstress/638525d95fd36783cb94bdbc
 ```
 
@@ -663,7 +663,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/tesstress/638525d95fd36783cb94bdbc
 ```
 
@@ -687,7 +687,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/tesoverthinking
 ```
 
@@ -717,7 +717,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesoverthinking
 ```
 
@@ -756,7 +756,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -783,7 +783,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://llocalhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -818,7 +818,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -842,7 +842,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/tesoverthinking
 ```
 
@@ -872,7 +872,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesoverthinking
 ```
 
@@ -911,7 +911,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -938,7 +938,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://llocalhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -973,7 +973,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -997,7 +997,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/tesoverthinking
 ```
 
@@ -1027,7 +1027,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesoverthinking
 ```
 
@@ -1066,7 +1066,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -1093,7 +1093,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -1128,7 +1128,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
@@ -1152,7 +1152,7 @@ Response
 
 Request
 
-```http
+```
 POST: http://localhost:3000/psikolog
 ```
 
@@ -1187,7 +1187,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/psikolog
 ```
 
@@ -1241,7 +1241,7 @@ Response
 
 Request
 
-```http
+```
 GET: http://localhost:3000/psikolog/63852e0c5fd36783cb94bded
 ```
 
@@ -1272,7 +1272,7 @@ Response
 
 Request
 
-```http
+```
 PUT: http://localhost:3000/psikolog/63852e0c5fd36783cb94bded
 ```
 
@@ -1316,7 +1316,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/psikolog/63852e0c5fd36783cb94bded
 ```
 
@@ -1338,7 +1338,7 @@ Response
 
 Request
 
-```http
+```
 DELETE: http://localhost:3000/psikolog
 ```
 
