@@ -8,7 +8,7 @@ const {
 	updateUserById,
 	login,
 	register,
-} = require('../controller/user.controller');
+} = require('../controllers/user.controller');
 
 const { auth, adminAuth } = require('../middleware/auth');
 const middleware = [auth, adminAuth];
