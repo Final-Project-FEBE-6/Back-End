@@ -22,9 +22,11 @@ module.exports = {
 
 	getUserById: async (req, res) => {
 		try {
-			const { _id } = req.params;
-			const user = await dataUser.findById(_id);
+			const { id } = req.params;
+			const user = await dataUser.findById(id);
 			const data = user;
+
+			console.log(id);
 
 			res.status(200).json({
 				message: 'success get data users by id',
@@ -38,8 +40,8 @@ module.exports = {
 
 	deleteUserById: async (req, res) => {
 		try {
-			const { _id } = req.params;
-			const user = await dataUser.findById(_id);
+			const { id } = req.params;
+			const user = await dataUser.findById(id);
 			const data = user;
 
 			if (!user) {

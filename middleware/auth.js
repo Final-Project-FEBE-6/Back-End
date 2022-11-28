@@ -2,7 +2,7 @@ require('dotenv').config();
 const jwt = require('jsonwebtoken');
 const user = require('../models/user');
 
-const auth = (req, res, next) => {
+const auth = async (req, res, next) => {
 	const authHeader = req.get('Authorization');
 	let token = '';
 
@@ -16,8 +16,9 @@ const auth = (req, res, next) => {
 		});
 
 	try {
-		const verified = jwt.verify(token, process.env.SECRET_KEY);
-		req.user = verified;
+		const { email } = jwt.verify(token, process.env.SECRET_KEY);
+		const getUserByEmail = await user.findOne({ email });
+		req.user = getUserByEmail;
 		next();
 	} catch (err) {
 		res.status(400).send({
@@ -27,7 +28,8 @@ const auth = (req, res, next) => {
 };
 
 const adminAuth = (req, res, next) => {
-	if (req.user.role != 'admin') {
+	const user = req.user;
+	if (user.role != 'admin') {
 		return res.status(403).send({
 			message: 'user cannot access',
 			data: null,
