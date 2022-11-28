@@ -1,10 +1,8 @@
 # Back-End Final Project
 
-## Admin Crud
-
 ---
 
-### Get All Data User
+### Get All Data User ( Admin )
 
 Request
 
@@ -44,7 +42,7 @@ Response
 }
 ```
 
-### Get User By Id
+### Get User By Id ( Admin )
 
 Request
 
@@ -74,7 +72,7 @@ Response
 }
 ```
 
-### Delete User By Id
+### Delete User By Id ( Admin )
 
 Request
 
@@ -96,7 +94,7 @@ Response
 }
 ```
 
-### Update User By Id
+### Update User By Id ( User with auth & Admin )
 
 Request
 
@@ -136,7 +134,7 @@ Response
 }
 ```
 
-### Register
+### Register ( User & Admin )
 
 Request
 
@@ -163,7 +161,7 @@ Response
 }
 ```
 
-### Login
+### Login ( User & Admin )
 
 Request
 
