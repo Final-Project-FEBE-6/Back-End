@@ -15,7 +15,7 @@ const middleware = [auth, adminAuth];
 
 router.get('/', middleware, getAllUser);
 router.get('/:id/', middleware, getUserById);
-router.delete('/:id/', deleteUserById);
+router.delete('/:id/', auth, deleteUserById);
 router.put('/:id/', auth, updateUserById);
 router.post('/login', login);
 router.post('/register', register);

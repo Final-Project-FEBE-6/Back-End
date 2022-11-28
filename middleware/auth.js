@@ -1,5 +1,6 @@
+require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const { users } = require('../models/user');
+const user = require('../models/user');
 
 const auth = (req, res, next) => {
 	const authHeader = req.get('Authorization');
@@ -19,16 +20,17 @@ const auth = (req, res, next) => {
 		req.user = verified;
 		next();
 	} catch (err) {
-		return res.status(400).json({
+		res.status(400).send({
 			message: 'invalid token',
 		});
 	}
 };
 
-const adminAuth = (res, req, next) => {
-	if (req.role != 'admin') {
-		return res.status(403).json({
-			message: 'forbiden access',
+const adminAuth = (req, res, next) => {
+	if (req.user.role != 'admin') {
+		return res.status(403).send({
+			message: 'user cannot access',
+			data: null,
 		});
 	}
 	next();

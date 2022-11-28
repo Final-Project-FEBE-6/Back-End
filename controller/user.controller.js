@@ -124,6 +124,8 @@ module.exports = {
 			res.json({
 				message: 'register success',
 			});
-		} catch {}
+		} catch (error) {
+			console.log(error);
+		}
 	},
 };
