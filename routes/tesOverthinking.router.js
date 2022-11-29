@@ -13,7 +13,7 @@ const { auth, adminAuth } = require('../middleware/auth');
 const middleware = [auth, adminAuth];
 
 router.get("/", auth, getAllTesOverthinking);
-router.get("/:id", middleware, getTesOverthinkingByID);
+router.get("/:id", auth, getTesOverthinkingByID);
 router.post("/", middleware, addTesOverthinking);
 router.delete("/:id", middleware, deleteTesOverthinkingByID);
 router.put("/:id", middleware, updateTesOverthinkingByID);
