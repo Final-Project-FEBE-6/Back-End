@@ -786,7 +786,7 @@ Response
 Request
 
 ```
-PUT: http://llocalhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
+PUT: https://be-skilvul-production.up.railway.app/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
 Masukkan Authorization (Bearer Token) hasil dari login admin.
@@ -941,7 +941,7 @@ Response
 Request
 
 ```
-PUT: http://llocalhost:3000/tesoverthinking/63852aa95fd36783cb94bddb
+PUT: https://be-skilvul-production.up.railway.app/tesoverthinking/63852aa95fd36783cb94bddb
 ```
 
 Masukkan Authorization (Bearer Token) hasil dari login admin.
