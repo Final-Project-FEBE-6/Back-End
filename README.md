@@ -136,7 +136,7 @@ Response
 }
 ```
 
-### Register ( User & Admin )
+### Register ( User )
 
 Request
 
@@ -151,7 +151,33 @@ Body
   "name": "user21",
   "email": "admin21@gmail.com",
   "password": "123"
-  "role": "user"
+}
+```
+
+Response
+
+```json
+{
+	"message": "register success"
+}
+```
+
+### Register ( Admin )
+
+Request
+
+```
+POST: https://be-skilvul-production.up.railway.app/user/register
+```
+
+Body
+
+```json
+{
+  "name": "user21",
+  "email": "admin21@gmail.com",
+  "password": "123",
+  "role": "admin"
 }
 ```
 
