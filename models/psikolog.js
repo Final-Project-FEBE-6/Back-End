@@ -8,6 +8,7 @@ const psikologSchema =  new Schema({ // membuat struktur data nya
     gender: String,
     umur: String,
     pengalaman: String,
+    no_hp: String,
 })
 
 const Psikolog = mongoose.model("Psikolog", psikologSchema)
